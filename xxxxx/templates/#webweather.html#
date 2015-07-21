@@ -6,7 +6,7 @@
 <body>
    <form action="/" method="POST">
      City: <input type="text" name="cityx"> <br>
-     <input type="submit" value="Login">
+     <input type="submit" value="Submit">
    </form>
   <h1>Temperature: </h1><h1>{{temp}}</h1>
 </body>
