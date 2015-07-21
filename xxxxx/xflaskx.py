@@ -1,15 +1,15 @@
 from flask import Flask, render_template
-import xxx 
+import weatherstuff 
 
-xxx2 = Flask(__name__)
+weather = Flask(__name__)
 
-@xxx2.route('/')
-def xx():
-    x = xxx.city("Paris")
-    return render_template('xxxx.html', temp = x)
+@weather.route('/weather')
+def get_weather():
+    a = weatherstuff.city("Paris")
+    return render_template('webweather.html', temp = a)
 
 
 
 if __name__ == '__main__':
-    xxx2.debug = True
-    xxx2.run()
+    weather.debug = True
+    weather.run()
